@@ -68,6 +68,8 @@ public class ContextSensitiveTreeRender extends Renderer
         "/library/skin");
     String skin = ServerConfigurationService.getString("skin.default",
         "default");
+    String skinPrefix = ServerConfigurationService.getString("portal.neoprefix",
+         "");
 
     String jsLibraryUrl = "../js";
     
@@ -80,7 +82,7 @@ public class ContextSensitiveTreeRender extends Renderer
         + "/csTree.js\"></script>\n");
     writer.write("<link href=\"" + skinRoot + "/tool_base.css\""
         + " type=\"text/css\" rel=\"stylesheet\" />\n");
-    writer.write("<link href=\"" + skinRoot + "/" + skin + "/tool.css\""
+    writer.write("<link href=\"" + skinRoot + "/" + skinPrefix + skin + "/tool.css\""
         + " type=\"text/css\" rel=\"stylesheet\" />\n");
     writer.write("<link href=\"../css/csTree.css\" type=\"text/css\" rel=\"stylesheet\" />");
     //writer.write("<body onload='collapseAll([\"ol\"]); openBookMark();'>");
