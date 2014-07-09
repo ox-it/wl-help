@@ -1,6 +1,7 @@
 package org.sakaiproject.component.app.help;
 
 import java.net.URL;
+import java.text.MessageFormat;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -83,8 +84,8 @@ public class TutorialEntityProviderImpl implements TutorialEntityProvider, AutoR
 		valuesMap.put("nextUrl", nextUrl);
 		
 		//build the body html:
-		String body = msgs.getString(ref.getId() + ".body");
-		
+		String body = replacePosParam(msgs.getString(ref.getId() + ".body"), "siteName");
+
 		//build footer html:
 		String footerHtml = "<br/><br/><div style='min-width: 120px; background: #ddd;'>";
 		if(previousUrl != null && !"".equals(previousUrl)){
@@ -118,6 +119,14 @@ public class TutorialEntityProviderImpl implements TutorialEntityProvider, AutoR
 	@Override
 	public String[] getHandledInputFormats() {
 		return new String[] { Formats.HTML, Formats.XML, Formats.JSON };
+	}
+
+	private String replacePosParam(String string, String key) {
+		Object[] msgArgs = { msgs.getString(key) };
+		MessageFormat formatter = new MessageFormat("");
+		formatter.applyPattern(string);
+		string = formatter.format(msgArgs);
+		return string;
 	}
 
 }
