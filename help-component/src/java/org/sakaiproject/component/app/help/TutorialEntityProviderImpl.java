@@ -15,7 +15,6 @@ import org.sakaiproject.entitybroker.entityprovider.search.Search;
 import org.sakaiproject.util.ResourceLoader;
 
 import java.net.URL;
-import java.text.MessageFormat;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -23,7 +22,7 @@ import java.util.Map;
 public class TutorialEntityProviderImpl implements TutorialEntityProvider, AutoRegisterEntityProvider, RESTful{
 
 	public static final String SITE_NAME = "site.name";
-	public static final String WEB_LEARN = "WebLearn";
+	public static final String SAKAI = "Sakai";
 	protected final Log log = LogFactory.getLog(getClass());
 	private ResourceLoader msgs = new ResourceLoader("TutorialMessages");
 	private ServerConfigurationService serverConfigurationService;
@@ -87,7 +86,7 @@ public class TutorialEntityProviderImpl implements TutorialEntityProvider, AutoR
 		valuesMap.put("nextUrl", nextUrl);
 		
 		//build the body html:
-		String siteName = serverConfigurationService.getString(SITE_NAME, WEB_LEARN);
+		String siteName = serverConfigurationService.getString(SITE_NAME, SAKAI);
 		String body = msgs.getFormattedMessage(ref.getId() + ".body", new Object[]{siteName});
 
 		//build footer html:
