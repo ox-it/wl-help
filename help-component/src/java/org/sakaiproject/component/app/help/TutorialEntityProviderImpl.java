@@ -1,16 +1,12 @@
 package org.sakaiproject.component.app.help;
 
-import java.net.URL;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import org.apache.commons.configuration.ConfigurationException;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.apache.commons.configuration.reloading.InvariantReloadingStrategy;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.sakaiproject.api.app.help.TutorialEntityProvider;
+import org.sakaiproject.component.api.ServerConfigurationService;
 import org.sakaiproject.entitybroker.EntityReference;
 import org.sakaiproject.entitybroker.entityprovider.capabilities.AutoRegisterEntityProvider;
 import org.sakaiproject.entitybroker.entityprovider.capabilities.RESTful;
@@ -18,13 +14,20 @@ import org.sakaiproject.entitybroker.entityprovider.extension.Formats;
 import org.sakaiproject.entitybroker.entityprovider.search.Search;
 import org.sakaiproject.util.ResourceLoader;
 
+import java.net.URL;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class TutorialEntityProviderImpl implements TutorialEntityProvider, AutoRegisterEntityProvider, RESTful{
 
+	public static final String SITE_NAME = "site.name";
+	public static final String SAKAI = "Sakai";
 	protected final Log log = LogFactory.getLog(getClass());
 	private ResourceLoader msgs = new ResourceLoader("TutorialMessages");
+	private ServerConfigurationService serverConfigurationService;
 	private static PropertiesConfiguration tutorialProps;
-	
+
 	private void initConfig() {
 		
 		URL url = getClass().getClassLoader().getResource("Tutorial.config"); 
@@ -83,8 +86,9 @@ public class TutorialEntityProviderImpl implements TutorialEntityProvider, AutoR
 		valuesMap.put("nextUrl", nextUrl);
 		
 		//build the body html:
-		String body = msgs.getString(ref.getId() + ".body");
-		
+		String siteName = serverConfigurationService.getString(SITE_NAME, SAKAI);
+		String body = msgs.getFormattedMessage(ref.getId() + ".body", new Object[]{siteName});
+
 		//build footer html:
 		String footerHtml = "<br/><br/><div style='min-width: 120px; background: #ddd;'>";
 		if(previousUrl != null && !"".equals(previousUrl)){
@@ -118,6 +122,10 @@ public class TutorialEntityProviderImpl implements TutorialEntityProvider, AutoR
 	@Override
 	public String[] getHandledInputFormats() {
 		return new String[] { Formats.HTML, Formats.XML, Formats.JSON };
+	}
+
+	public void setServerConfigurationService(ServerConfigurationService serverConfigurationService) {
+		this.serverConfigurationService = serverConfigurationService;
 	}
 
 }
