@@ -23,6 +23,7 @@ import java.util.Map;
 public class TutorialEntityProviderImpl implements TutorialEntityProvider, AutoRegisterEntityProvider, RESTful{
 
 	public static final String SITE_NAME = "site.name";
+	public static final String WEB_LEARN = "WebLearn";
 	protected final Log log = LogFactory.getLog(getClass());
 	private ResourceLoader msgs = new ResourceLoader("TutorialMessages");
 	private ServerConfigurationService serverConfigurationService;
@@ -86,8 +87,8 @@ public class TutorialEntityProviderImpl implements TutorialEntityProvider, AutoR
 		valuesMap.put("nextUrl", nextUrl);
 		
 		//build the body html:
-		String siteName = serverConfigurationService.getString(SITE_NAME, "WebLearn");
-		String body = replacePosParam(msgs.getString(ref.getId() + ".body"), siteName);
+		String siteName = serverConfigurationService.getString(SITE_NAME, WEB_LEARN);
+		String body = msgs.getFormattedMessage(ref.getId() + ".body", new Object[]{siteName});
 
 		//build footer html:
 		String footerHtml = "<br/><br/><div style='min-width: 120px; background: #ddd;'>";
@@ -122,14 +123,6 @@ public class TutorialEntityProviderImpl implements TutorialEntityProvider, AutoR
 	@Override
 	public String[] getHandledInputFormats() {
 		return new String[] { Formats.HTML, Formats.XML, Formats.JSON };
-	}
-
-	private String replacePosParam(String string, String key) {
-		Object[] msgArgs = { key };
-		MessageFormat formatter = new MessageFormat("");
-		formatter.applyPattern(string);
-		string = formatter.format(msgArgs);
-		return string;
 	}
 
 	public void setServerConfigurationService(ServerConfigurationService serverConfigurationService) {
