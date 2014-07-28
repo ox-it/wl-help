@@ -85,13 +85,13 @@ public class ContentServlet extends HttpServlet
           
        	  resource = getHelpManager().getResourceByDocId(docId);
           //Possibly a fileURL
-          if (resource == null && docId.indexOf('/') >= 0) {
+          if (resource == null && docId != null && docId.indexOf('/') >= 0) {
         	  if (M_log.isDebugEnabled())
         		  M_log.debug("Adding new resource:"+docId);
         	  resource = getHelpManager().createResource();
         	  resource.setLocation("/"+docId);
         	  resource.setDocId(docId);
-        	  url = new URL(req.getScheme(),req.getLocalName(),req.getServerPort(),req.getContextPath()+"/"+docId);
+        	  url = new URL(req.getScheme(),req.getServerName(),req.getServerPort(),req.getContextPath()+"/"+docId);
         	  //Can't save it without a category as is null
         	  //getHelpManager().storeResource(resource);
           } 

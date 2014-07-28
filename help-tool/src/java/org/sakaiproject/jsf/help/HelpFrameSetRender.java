@@ -108,7 +108,7 @@ public class HelpFrameSetRender extends Renderer
         writer.write("<FRAMESET rows=\"40,*\">");
         writer.write("<FRAME src=\""+ extraHelp + "\">");
     }
-    writer.write("<FRAMESET cols=\"30%, 70%\"><FRAMESET rows=\"250, 350\">");
+    writer.write("<FRAMESET cols=\"30%, 70%\"><FRAMESET rows=\"150, 450\">");
     writer.write("<FRAME src=\"" + searchToolUrl + "\" name=\"search\">");
     writer.write("<FRAME src=\"" + tocToolUrl + "\" name=\"toc\">");
     writer.write("</FRAMESET>\n");
