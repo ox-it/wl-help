@@ -742,7 +742,7 @@
   </bean>
   <bean id="emailInstructorGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
     <property name="name">
-      <value>Email</value>
+      <value>Email Sender</value>
     </property>
     <property name="resources">
       <list>
@@ -758,7 +758,7 @@
       <value>whatistheEmailtool</value>
     </property>
     <property name="name">
-      <value>What is the Email tool?</value>
+      <value>What is the Email Sender tool?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_emailInstructorGuide/What-is-the-Email-tool-.html</value>
@@ -772,7 +772,7 @@
       <value>howdoIsendanEmailmessage</value>
     </property>
     <property name="name">
-      <value>How do I send an Email message?</value>
+      <value>How do I send an Email Sender message?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_emailInstructorGuide/How-do-I-send-an-Email-message-.html</value>
@@ -783,7 +783,7 @@
       <value>howtoIsettheEmailtooloptionsformysite</value>
     </property>
     <property name="name">
-      <value>How to I set the Email tool options for my site?</value>
+      <value>How to I set the Email Sender tool options for my site?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_emailInstructorGuide/How-to-I-set-the-Email-tool-options-for-my-site-.html</value>
@@ -794,7 +794,7 @@
       <value>howdoIchangetheEmailtoolpermissions</value>
     </property>
     <property name="name">
-      <value>How do I change the Email tool permissions?</value>
+      <value>How do I change the Email Sender tool permissions?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_emailInstructorGuide/How-do-I-change-the-Email-tool-permissions-.html</value>
