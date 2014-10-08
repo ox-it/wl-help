@@ -38,7 +38,6 @@
         <ref bean="newsInstructorGuide"/>
         <ref bean="podcastsInstructorGuide"/>
         <ref bean="pollsInstructorGuide"/>
-        <ref bean="postEmInstructorGuide"/>
         <ref bean="profileInstructorGuide"/>
         <ref bean="resourcesInstructorGuide"/>
         <ref bean="richTextEditorInstructorGuide"/>
@@ -1842,42 +1841,6 @@
     </property>
     <property name="location">
       <value>/sakai_screensteps_pollsInstructorGuide/How-do-I-modify-Polls-tool-permissions-.html</value>
-    </property>
-  </bean>
-  <bean id="postEmInstructorGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
-    <property name="name">
-      <value>PostEm</value>
-    </property>
-    <property name="resources">
-      <list>
-        <ref bean="whatisthePostEmtool"/>
-        <ref bean="howdoIaddPostEmfeedback"/>
-      </list>
-    </property>
-  </bean>
-  <bean id="whatisthePostEmtool" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>whatisthePostEmtool</value>
-    </property>
-    <property name="name">
-      <value>What is the PostEm tool?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_postEmInstructorGuide/What-is-the-PostEm-tool-.html</value>
-    </property>
-    <property name="defaultForTool">
-      <value>sakai.postem</value>
-    </property>
-  </bean>
-  <bean id="howdoIaddPostEmfeedback" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIaddPostEmfeedback</value>
-    </property>
-    <property name="name">
-      <value>How do I add PostEm feedback?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_postEmInstructorGuide/How-do-I-add-PostEm-feedback-.html</value>
     </property>
   </bean>
   <bean id="profileInstructorGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
@@ -4063,7 +4026,6 @@
         <ref bean="newsStudentGuide"/>
         <ref bean="podcastsStudentGuide"/>
         <ref bean="pollsStudentGuide"/>
-        <ref bean="postEmStudentGuide"/>
         <ref bean="profileStudentGuide"/>
         <ref bean="resourcesStudentGuide"/>
         <ref bean="richTextEditorStudentGuide"/>
@@ -4389,31 +4351,6 @@
         <ref bean="howdoItakeapoll"/>
         <ref bean="howdoIviewpollresults"/>
       </list>
-    </property>
-  </bean>
-  <bean id="postEmStudentGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
-    <property name="name">
-      <value>PostEm</value>
-    </property>
-    <property name="resources">
-      <list>
-        <ref bean="whatisthePostEmtool"/>
-        <ref bean="howdoIviewmyfeedbackinPostEm"/>
-      </list>
-    </property>
-  </bean>
-  <bean id="howdoIviewmyfeedbackinPostEm" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIviewmyfeedbackinPostEm</value>
-    </property>
-    <property name="name">
-      <value>How do I view my feedback in PostEm?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_postEmStudentGuide/How-do-I-view-my-feedback-in-PostEm-.html</value>
-    </property>
-    <property name="defaultForTool">
-      <value>sakai.postem</value>
     </property>
   </bean>
   <bean id="profileStudentGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
