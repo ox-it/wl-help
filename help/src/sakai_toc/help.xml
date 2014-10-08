@@ -44,7 +44,6 @@
         <ref bean="rosterInstructorGuide"/>
         <ref bean="scheduleInstructorGuide"/>
         <ref bean="searchInstructorGuide"/>
-        <ref bean="sectionInfoInstructorGuide"/>
         <ref bean="signUpInstructorGuide"/>
         <ref bean="siteInfoInstructorGuide"/>
         <ref bean="statisticsInstructorGuide"/>
@@ -2777,102 +2776,6 @@
     </property>
     <property name="location">
       <value>/sakai_screensteps_searchInstructorGuide/How-do-I-perform-an-advanced-search-.html</value>
-    </property>
-  </bean>
-  <bean id="sectionInfoInstructorGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
-    <property name="name">
-      <value>Section Info</value>
-    </property>
-    <property name="resources">
-      <list>
-        <ref bean="whatistheSectionInfotool"/>
-        <ref bean="howaresectionsdifferentthangroups"/>
-        <ref bean="howdoIcreateasection"/>
-        <ref bean="howdoIeditasection"/>
-        <ref bean="howdoIdeleteasection"/>
-        <ref bean="howdoIaddsitememberstoasection"/>
-        <ref bean="howdoIaddteachingassistantstoasection"/>
-      </list>
-    </property>
-  </bean>
-  <bean id="whatistheSectionInfotool" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>whatistheSectionInfotool</value>
-    </property>
-    <property name="name">
-      <value>What is the Section Info tool?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_sectionInfoInstructorGuide/What-is-the-Section-Info-tool-.html</value>
-    </property>
-    <property name="defaultForTool">
-      <value>sakai.sections</value>
-    </property>
-  </bean>
-  <bean id="howaresectionsdifferentthangroups" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howaresectionsdifferentthangroups</value>
-    </property>
-    <property name="name">
-      <value>How are sections different than groups?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_sectionInfoInstructorGuide/How-are-sections-different-than-groups-.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIcreateasection" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIcreateasection</value>
-    </property>
-    <property name="name">
-      <value>How do I create a section?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_sectionInfoInstructorGuide/How-do-I-create-a-section-.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIeditasection" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIeditasection</value>
-    </property>
-    <property name="name">
-      <value>How do I edit a section?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_sectionInfoInstructorGuide/How-do-I-edit-a-section-.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIdeleteasection" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIdeleteasection</value>
-    </property>
-    <property name="name">
-      <value>How do I delete a section?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_sectionInfoInstructorGuide/How-do-I-delete-a-section-.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIaddsitememberstoasection" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIaddsitememberstoasection</value>
-    </property>
-    <property name="name">
-      <value>How do I add site members to a section?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_sectionInfoInstructorGuide/How-do-I-add-site-members-to-a-section-.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIaddteachingassistantstoasection" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIaddteachingassistantstoasection</value>
-    </property>
-    <property name="name">
-      <value>How do I add teaching assistants to a section?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_sectionInfoInstructorGuide/How-do-I-add-teaching-assistants-to-a-section-.html</value>
     </property>
   </bean>
   <bean id="signUpInstructorGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
