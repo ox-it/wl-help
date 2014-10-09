@@ -3114,7 +3114,7 @@
   </bean>
   <bean id="statisticsInstructorGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
     <property name="name">
-      <value>Statistics</value>
+      <value>Site Stats</value>
     </property>
     <property name="resources">
       <list>
@@ -3135,7 +3135,7 @@
       <value>whatistheStatisticstool</value>
     </property>
     <property name="name">
-      <value>What is the Statistics tool?</value>
+      <value>What is the Site Stats tool?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_statisticsInstructorGuide/What-is-the-Statistics-tool-.html</value>
@@ -3149,7 +3149,7 @@
       <value>howdoIviewsummaryreportsintheStatisticstool</value>
     </property>
     <property name="name">
-      <value>How do I view summary reports in the Statistics tool?</value>
+      <value>How do I view summary reports in the Site Stats tool?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_statisticsInstructorGuide/How-do-I-view-summary-reports-in-the-Statistics-tool-.html</value>
@@ -3226,7 +3226,7 @@
       <value>howdoImodifypreferencesintheStatisticstool</value>
     </property>
     <property name="name">
-      <value>How do I modify preferences in the Statistics tool?</value>
+      <value>How do I modify preferences in the Site Stats tool?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_statisticsInstructorGuide/How-do-I-modify-preferences-in-the-Statistics-tool-.html</value>
