@@ -2514,7 +2514,7 @@
   </bean>
   <bean id="rosterInstructorGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
     <property name="name">
-      <value>Roster</value>
+      <value>Site Members</value>
     </property>
     <property name="resources">
       <list>
@@ -2531,7 +2531,7 @@
       <value>whatistheRostertool</value>
     </property>
     <property name="name">
-      <value>What is the Roster tool?</value>
+      <value>What is the Site Members tool?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_rosterInstructorGuide/What-is-the-Roster-tool-.html</value>
@@ -2578,7 +2578,7 @@
       <value>howdoIeditRostertoolpermissions</value>
     </property>
     <property name="name">
-      <value>How do I edit Roster tool permissions?</value>
+      <value>How do I edit Site Members tool permissions?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_rosterInstructorGuide/How-do-I-edit-Roster-tool-permissions-.html</value>
@@ -3018,7 +3018,7 @@
       <value>howdoIaddaclassroster</value>
     </property>
     <property name="name">
-      <value>How do I add a class roster?</value>
+      <value>How do I add a class site members?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_siteInfoInstructorGuide/How-do-I-add-a-class-roster-.html</value>
@@ -3029,7 +3029,7 @@
       <value>howdoIdeleteaclassroster</value>
     </property>
     <property name="name">
-      <value>How do I delete a class roster?</value>
+      <value>How do I delete a class site members?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_siteInfoInstructorGuide/How-do-I-delete-a-class-roster-.html</value>
@@ -3958,7 +3958,7 @@
   </bean>
   <bean id="rosterStudentGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
     <property name="name">
-      <value>Roster</value>
+      <value>Site Members</value>
     </property>
     <property name="resources">
       <list>
