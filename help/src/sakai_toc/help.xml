@@ -1098,7 +1098,7 @@
   </bean>
   <bean id="gradebookInstructorGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
     <property name="name">
-      <value>Gradebook</value>
+      <value>Markbook</value>
     </property>
     <property name="resources">
       <list>
@@ -1119,7 +1119,7 @@
       <value>whatistheGradebook</value>
     </property>
     <property name="name">
-      <value>What is the Gradebook?</value>
+      <value>What is the Markbook?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_gradebookInstructorGuide/What-is-the-Gradebook-.html</value>
@@ -1133,7 +1133,7 @@
       <value>howdoIsetupmyGradebook</value>
     </property>
     <property name="name">
-      <value>How do I set up my Gradebook?</value>
+      <value>How do I set up my Markbook?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_gradebookInstructorGuide/How-do-I-set-up-my-Gradebook-.html</value>
@@ -1144,7 +1144,7 @@
       <value>howdoIadditemstotheGradebook</value>
     </property>
     <property name="name">
-      <value>How do I add items to the Gradebook?</value>
+      <value>How do I add items to the Markbook?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_gradebookInstructorGuide/How-do-I-add-items-to-the-Gradebook-.html</value>
@@ -1155,7 +1155,7 @@
       <value>howdoIenterandoreditgradesintheGradebook</value>
     </property>
     <property name="name">
-      <value>How do I enter and/or edit grades in the Gradebook?</value>
+      <value>How do I enter and/or edit grades in the Markbook?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_gradebookInstructorGuide/How-do-I-enter-and-or-edit-grades-in-the-Gradebook-.html</value>
@@ -1166,7 +1166,7 @@
       <value>howdoIexportgradesfromtheGradebook</value>
     </property>
     <property name="name">
-      <value>How do I export grades from the Gradebook?</value>
+      <value>How do I export grades from the Markbook?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_gradebookInstructorGuide/How-do-I-export-grades-from-the-Gradebook-.html</value>
@@ -1177,7 +1177,7 @@
       <value>howdoIimportgradesintotheGradebook</value>
     </property>
     <property name="name">
-      <value>How do I import grades into the Gradebook?</value>
+      <value>How do I import grades into the Markbook?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_gradebookInstructorGuide/How-do-I-import-grades-into-the-Gradebook-.html</value>
@@ -3795,7 +3795,7 @@
   </bean>
   <bean id="gradebookStudentGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
     <property name="name">
-      <value>Gradebook</value>
+      <value>Markbook</value>
     </property>
     <property name="resources">
       <list>
@@ -3809,7 +3809,7 @@
       <value>howdoIviewmyGradebookgrades</value>
     </property>
     <property name="name">
-      <value>How do I view my Gradebook grades?</value>
+      <value>How do I view my Markbook grades?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_gradebookStudentGuide/How-do-I-view-my-Gradebook-grades-.html</value>
