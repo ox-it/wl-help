@@ -106,7 +106,7 @@
       <value>richTextEditorAccessibilityGuidelines</value>
     </property>
     <property name="name">
-      <value>Rich Text Editor Accessibility Guidelines</value>
+      <value>WYSIWYG Editor Accessibility Guidelines</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_accessibilityInstructorGuide/Rich-Text-Editor-Accessibility-Guidelines.html</value>
@@ -2334,7 +2334,7 @@
   </bean>
   <bean id="richTextEditorInstructorGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
     <property name="name">
-      <value>Rich Text Editor</value>
+      <value>WYSIWYG Editor</value>
     </property>
     <property name="resources">
       <list>
@@ -2360,7 +2360,7 @@
       <value>whatistheRichTextEditor</value>
     </property>
     <property name="name">
-      <value>What is the Rich Text Editor?</value>
+      <value>What is the WYSIWYG Editor?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_richTextEditorInstructorGuide/What-is-the-Rich-Text-Editor-.html</value>
@@ -2374,7 +2374,7 @@
       <value>whatactionscanIperformusingtheRichTextEditoricons</value>
     </property>
     <property name="name">
-      <value>What actions can I perform using the Rich Text Editor icons?</value>
+      <value>What actions can I perform using the WYSIWYG Editor icons?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_richTextEditorInstructorGuide/What-actions-can-I-perform-using-the-Rich-Text-Editor-icons-.html</value>
@@ -3936,7 +3936,7 @@
   </bean>
   <bean id="richTextEditorStudentGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
     <property name="name">
-      <value>Rich Text Editor</value>
+      <value>WYSIWYG Editor</value>
     </property>
     <property name="resources">
       <list>
