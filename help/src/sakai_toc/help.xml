@@ -9,7 +9,6 @@
       <list>
         <ref bean="instructorGuide"/>
         <ref bean="studentGuide"/>
-        <ref bean="oSPGuide"/>
       </list>
     </property>
   </bean>
@@ -38,19 +37,16 @@
         <ref bean="newsInstructorGuide"/>
         <ref bean="podcastsInstructorGuide"/>
         <ref bean="pollsInstructorGuide"/>
-        <ref bean="postEmInstructorGuide"/>
         <ref bean="profileInstructorGuide"/>
         <ref bean="resourcesInstructorGuide"/>
         <ref bean="richTextEditorInstructorGuide"/>
         <ref bean="rosterInstructorGuide"/>
         <ref bean="scheduleInstructorGuide"/>
         <ref bean="searchInstructorGuide"/>
-        <ref bean="sectionInfoInstructorGuide"/>
         <ref bean="signUpInstructorGuide"/>
         <ref bean="siteInfoInstructorGuide"/>
         <ref bean="statisticsInstructorGuide"/>
         <ref bean="syllabusInstructorGuide"/>
-        <ref bean="testsQuizzesInstructorGuide"/>
         <ref bean="webContentInstructorGuide"/>
         <ref bean="wikiInstructorGuide"/>
       </list>
@@ -110,7 +106,7 @@
       <value>richTextEditorAccessibilityGuidelines</value>
     </property>
     <property name="name">
-      <value>Rich Text Editor Accessibility Guidelines</value>
+      <value>WYSIWYG Editor Accessibility Guidelines</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_accessibilityInstructorGuide/Rich-Text-Editor-Accessibility-Guidelines.html</value>
@@ -1102,7 +1098,7 @@
   </bean>
   <bean id="gradebookInstructorGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
     <property name="name">
-      <value>Gradebook</value>
+      <value>Markbook</value>
     </property>
     <property name="resources">
       <list>
@@ -1123,7 +1119,7 @@
       <value>whatistheGradebook</value>
     </property>
     <property name="name">
-      <value>What is the Gradebook?</value>
+      <value>What is the Markbook?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_gradebookInstructorGuide/What-is-the-Gradebook-.html</value>
@@ -1137,7 +1133,7 @@
       <value>howdoIsetupmyGradebook</value>
     </property>
     <property name="name">
-      <value>How do I set up my Gradebook?</value>
+      <value>How do I set up my Markbook?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_gradebookInstructorGuide/How-do-I-set-up-my-Gradebook-.html</value>
@@ -1148,7 +1144,7 @@
       <value>howdoIadditemstotheGradebook</value>
     </property>
     <property name="name">
-      <value>How do I add items to the Gradebook?</value>
+      <value>How do I add items to the Markbook?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_gradebookInstructorGuide/How-do-I-add-items-to-the-Gradebook-.html</value>
@@ -1159,7 +1155,7 @@
       <value>howdoIenterandoreditgradesintheGradebook</value>
     </property>
     <property name="name">
-      <value>How do I enter and/or edit grades in the Gradebook?</value>
+      <value>How do I enter and/or edit grades in the Markbook?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_gradebookInstructorGuide/How-do-I-enter-and-or-edit-grades-in-the-Gradebook-.html</value>
@@ -1170,7 +1166,7 @@
       <value>howdoIexportgradesfromtheGradebook</value>
     </property>
     <property name="name">
-      <value>How do I export grades from the Gradebook?</value>
+      <value>How do I export grades from the Markbook?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_gradebookInstructorGuide/How-do-I-export-grades-from-the-Gradebook-.html</value>
@@ -1181,7 +1177,7 @@
       <value>howdoIimportgradesintotheGradebook</value>
     </property>
     <property name="name">
-      <value>How do I import grades into the Gradebook?</value>
+      <value>How do I import grades into the Markbook?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_gradebookInstructorGuide/How-do-I-import-grades-into-the-Gradebook-.html</value>
@@ -1844,42 +1840,6 @@
       <value>/sakai_screensteps_pollsInstructorGuide/How-do-I-modify-Polls-tool-permissions-.html</value>
     </property>
   </bean>
-  <bean id="postEmInstructorGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
-    <property name="name">
-      <value>PostEm</value>
-    </property>
-    <property name="resources">
-      <list>
-        <ref bean="whatisthePostEmtool"/>
-        <ref bean="howdoIaddPostEmfeedback"/>
-      </list>
-    </property>
-  </bean>
-  <bean id="whatisthePostEmtool" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>whatisthePostEmtool</value>
-    </property>
-    <property name="name">
-      <value>What is the PostEm tool?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_postEmInstructorGuide/What-is-the-PostEm-tool-.html</value>
-    </property>
-    <property name="defaultForTool">
-      <value>sakai.postem</value>
-    </property>
-  </bean>
-  <bean id="howdoIaddPostEmfeedback" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIaddPostEmfeedback</value>
-    </property>
-    <property name="name">
-      <value>How do I add PostEm feedback?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_postEmInstructorGuide/How-do-I-add-PostEm-feedback-.html</value>
-    </property>
-  </bean>
   <bean id="profileInstructorGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
     <property name="name">
       <value>Profile</value>
@@ -2374,7 +2334,7 @@
   </bean>
   <bean id="richTextEditorInstructorGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
     <property name="name">
-      <value>Rich Text Editor</value>
+      <value>WYSIWYG Editor</value>
     </property>
     <property name="resources">
       <list>
@@ -2400,7 +2360,7 @@
       <value>whatistheRichTextEditor</value>
     </property>
     <property name="name">
-      <value>What is the Rich Text Editor?</value>
+      <value>What is the WYSIWYG Editor?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_richTextEditorInstructorGuide/What-is-the-Rich-Text-Editor-.html</value>
@@ -2414,7 +2374,7 @@
       <value>whatactionscanIperformusingtheRichTextEditoricons</value>
     </property>
     <property name="name">
-      <value>What actions can I perform using the Rich Text Editor icons?</value>
+      <value>What actions can I perform using the WYSIWYG Editor icons?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_richTextEditorInstructorGuide/What-actions-can-I-perform-using-the-Rich-Text-Editor-icons-.html</value>
@@ -2554,7 +2514,7 @@
   </bean>
   <bean id="rosterInstructorGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
     <property name="name">
-      <value>Roster</value>
+      <value>Site Members</value>
     </property>
     <property name="resources">
       <list>
@@ -2571,7 +2531,7 @@
       <value>whatistheRostertool</value>
     </property>
     <property name="name">
-      <value>What is the Roster tool?</value>
+      <value>What is the Site Members tool?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_rosterInstructorGuide/What-is-the-Roster-tool-.html</value>
@@ -2618,7 +2578,7 @@
       <value>howdoIeditRostertoolpermissions</value>
     </property>
     <property name="name">
-      <value>How do I edit Roster tool permissions?</value>
+      <value>How do I edit Site Members tool permissions?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_rosterInstructorGuide/How-do-I-edit-Roster-tool-permissions-.html</value>
@@ -2814,102 +2774,6 @@
     </property>
     <property name="location">
       <value>/sakai_screensteps_searchInstructorGuide/How-do-I-perform-an-advanced-search-.html</value>
-    </property>
-  </bean>
-  <bean id="sectionInfoInstructorGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
-    <property name="name">
-      <value>Section Info</value>
-    </property>
-    <property name="resources">
-      <list>
-        <ref bean="whatistheSectionInfotool"/>
-        <ref bean="howaresectionsdifferentthangroups"/>
-        <ref bean="howdoIcreateasection"/>
-        <ref bean="howdoIeditasection"/>
-        <ref bean="howdoIdeleteasection"/>
-        <ref bean="howdoIaddsitememberstoasection"/>
-        <ref bean="howdoIaddteachingassistantstoasection"/>
-      </list>
-    </property>
-  </bean>
-  <bean id="whatistheSectionInfotool" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>whatistheSectionInfotool</value>
-    </property>
-    <property name="name">
-      <value>What is the Section Info tool?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_sectionInfoInstructorGuide/What-is-the-Section-Info-tool-.html</value>
-    </property>
-    <property name="defaultForTool">
-      <value>sakai.sections</value>
-    </property>
-  </bean>
-  <bean id="howaresectionsdifferentthangroups" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howaresectionsdifferentthangroups</value>
-    </property>
-    <property name="name">
-      <value>How are sections different than groups?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_sectionInfoInstructorGuide/How-are-sections-different-than-groups-.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIcreateasection" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIcreateasection</value>
-    </property>
-    <property name="name">
-      <value>How do I create a section?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_sectionInfoInstructorGuide/How-do-I-create-a-section-.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIeditasection" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIeditasection</value>
-    </property>
-    <property name="name">
-      <value>How do I edit a section?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_sectionInfoInstructorGuide/How-do-I-edit-a-section-.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIdeleteasection" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIdeleteasection</value>
-    </property>
-    <property name="name">
-      <value>How do I delete a section?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_sectionInfoInstructorGuide/How-do-I-delete-a-section-.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIaddsitememberstoasection" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIaddsitememberstoasection</value>
-    </property>
-    <property name="name">
-      <value>How do I add site members to a section?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_sectionInfoInstructorGuide/How-do-I-add-site-members-to-a-section-.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIaddteachingassistantstoasection" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIaddteachingassistantstoasection</value>
-    </property>
-    <property name="name">
-      <value>How do I add teaching assistants to a section?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_sectionInfoInstructorGuide/How-do-I-add-teaching-assistants-to-a-section-.html</value>
     </property>
   </bean>
   <bean id="signUpInstructorGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
@@ -3154,7 +3018,7 @@
       <value>howdoIaddaclassroster</value>
     </property>
     <property name="name">
-      <value>How do I add a class roster?</value>
+      <value>How do I add a class site members?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_siteInfoInstructorGuide/How-do-I-add-a-class-roster-.html</value>
@@ -3165,7 +3029,7 @@
       <value>howdoIdeleteaclassroster</value>
     </property>
     <property name="name">
-      <value>How do I delete a class roster?</value>
+      <value>How do I delete a class site members?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_siteInfoInstructorGuide/How-do-I-delete-a-class-roster-.html</value>
@@ -3250,7 +3114,7 @@
   </bean>
   <bean id="statisticsInstructorGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
     <property name="name">
-      <value>Statistics</value>
+      <value>Site Stats</value>
     </property>
     <property name="resources">
       <list>
@@ -3271,7 +3135,7 @@
       <value>whatistheStatisticstool</value>
     </property>
     <property name="name">
-      <value>What is the Statistics tool?</value>
+      <value>What is the Site Stats tool?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_statisticsInstructorGuide/What-is-the-Statistics-tool-.html</value>
@@ -3285,7 +3149,7 @@
       <value>howdoIviewsummaryreportsintheStatisticstool</value>
     </property>
     <property name="name">
-      <value>How do I view summary reports in the Statistics tool?</value>
+      <value>How do I view summary reports in the Site Stats tool?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_statisticsInstructorGuide/How-do-I-view-summary-reports-in-the-Statistics-tool-.html</value>
@@ -3362,7 +3226,7 @@
       <value>howdoImodifypreferencesintheStatisticstool</value>
     </property>
     <property name="name">
-      <value>How do I modify preferences in the Statistics tool?</value>
+      <value>How do I modify preferences in the Site Stats tool?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_statisticsInstructorGuide/How-do-I-modify-preferences-in-the-Statistics-tool-.html</value>
@@ -3462,366 +3326,6 @@
     </property>
     <property name="location">
       <value>/sakai_screensteps_syllabusInstructorGuide/How-do-I-create-a-multi-part-syllabus-by-dates-.html</value>
-    </property>
-  </bean>
-  <bean id="testsQuizzesInstructorGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
-    <property name="name">
-      <value>Tests &amp; Quizzes</value>
-    </property>
-    <property name="resources">
-      <list>
-        <ref bean="whatistheTestsQuizzestool"/>
-        <ref bean="howdoIcreateanassessmentinTestsQuizzes"/>
-        <ref bean="howdoIcreateanewassessmentusingmarkuptextorcutandpaste"/>
-        <ref bean="howdoIaddanewquestionwiththeassessmentbuilder"/>
-        <ref bean="howdoIcreateamultiplechoicequestion"/>
-        <ref bean="howdoIcreateamatchingquestion"/>
-        <ref bean="howdoIaddatruefalsequestion"/>
-        <ref bean="howdoIcreateashortansweressayquestion"/>
-        <ref bean="howdoIaddafillintheblankquestion"/>
-        <ref bean="howdoIaddanumericresponsequestion"/>
-        <ref bean="howdoIaddacalculatedquestion"/>
-        <ref bean="howdoIaddanaudiorecordingquestion"/>
-        <ref bean="howdoIaddafileuploadquestion"/>
-        <ref bean="howdoIaddanextendedmatchingitemsquestion"/>
-        <ref bean="howtoIaddmultiplepartstoanassessment"/>
-        <ref bean="howdoIuseassessmentparts"/>
-        <ref bean="whatisaquestionpool"/>
-        <ref bean="howdoIaddcopymoveorremoveaquestionpool"/>
-        <ref bean="howdoIaddaquestiontoaquestionpool"/>
-        <ref bean="howdoIcopyquestionsfromthequestionpool"/>
-        <ref bean="howdoIsetuparandomquestionset"/>
-        <ref bean="howdoIimportandexportassessments"/>
-        <ref bean="howdoIimportaquestionpool"/>
-        <ref bean="howdoIshareaquestionpool"/>
-        <ref bean="howdoIcreateasurvey"/>
-        <ref bean="howdoIinspectandadjustthesettingsofanassessment"/>
-        <ref bean="howdoIpublishanassessmentietestorquiz"/>
-        <ref bean="howdoIgradeTestsQuizzes"/>
-        <ref bean="whatistheTestsQuizzesEventLog"/>
-      </list>
-    </property>
-  </bean>
-  <bean id="whatistheTestsQuizzestool" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>whatistheTestsQuizzestool</value>
-    </property>
-    <property name="name">
-      <value>What is the Tests &amp; Quizzes tool?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_testsQuizzesInstructorGuide/What-is-the-Tests---Quizzes-tool-.html</value>
-    </property>
-    <property name="defaultForTool">
-      <value>sakai.samigo</value>
-    </property>
-  </bean>
-  <bean id="howdoIcreateanassessmentinTestsQuizzes" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIcreateanassessmentinTestsQuizzes</value>
-    </property>
-    <property name="name">
-      <value>How do I create an assessment in Tests &amp; Quizzes?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_testsQuizzesInstructorGuide/How-do-I-create-an-assessment-in-Tests---Quizzes-.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIcreateanewassessmentusingmarkuptextorcutandpaste" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIcreateanewassessmentusingmarkuptextorcutandpaste</value>
-    </property>
-    <property name="name">
-      <value>How do I create a new assessment using markup text or cut and paste?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_testsQuizzesInstructorGuide/How-do-I-create-a-new-assessment-using-markup-text-or-cut-and-paste-.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIaddanewquestionwiththeassessmentbuilder" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIaddanewquestionwiththeassessmentbuilder</value>
-    </property>
-    <property name="name">
-      <value>How do I add a new question (with the assessment builder)?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_testsQuizzesInstructorGuide/How-do-I-add-a-new-question--with-the-assessment-builder--.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIcreateamultiplechoicequestion" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIcreateamultiplechoicequestion</value>
-    </property>
-    <property name="name">
-      <value>How do I create a multiple choice question?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_testsQuizzesInstructorGuide/How-do-I-create-a-multiple-choice-question-.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIcreateamatchingquestion" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIcreateamatchingquestion</value>
-    </property>
-    <property name="name">
-      <value>How do I create a matching question?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_testsQuizzesInstructorGuide/How-do-I-create-a-matching-question-.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIaddatruefalsequestion" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIaddatruefalsequestion</value>
-    </property>
-    <property name="name">
-      <value>How do I add a true/false question?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_testsQuizzesInstructorGuide/How-do-I-add-a-true-false-question-.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIcreateashortansweressayquestion" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIcreateashortansweressayquestion</value>
-    </property>
-    <property name="name">
-      <value>How do I create a short answer/essay question?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_testsQuizzesInstructorGuide/How-do-I-create-a-short-answer-essay-question-.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIaddafillintheblankquestion" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIaddafillintheblankquestion</value>
-    </property>
-    <property name="name">
-      <value>How do I add a fill in the blank question?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_testsQuizzesInstructorGuide/How-do-I-add-a-fill-in-the-blank-question-.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIaddanumericresponsequestion" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIaddanumericresponsequestion</value>
-    </property>
-    <property name="name">
-      <value>How do I add a numeric response question?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_testsQuizzesInstructorGuide/How-do-I-add-a-numeric-response-question-.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIaddacalculatedquestion" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIaddacalculatedquestion</value>
-    </property>
-    <property name="name">
-      <value>How do I add a calculated question?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_testsQuizzesInstructorGuide/How-do-I-add-a-calculated-question-.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIaddanaudiorecordingquestion" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIaddanaudiorecordingquestion</value>
-    </property>
-    <property name="name">
-      <value>How do I add an audio recording question?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_testsQuizzesInstructorGuide/How-do-I-add-an-audio-recording-question-.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIaddafileuploadquestion" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIaddafileuploadquestion</value>
-    </property>
-    <property name="name">
-      <value>How do I add a file upload question?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_testsQuizzesInstructorGuide/How-do-I-add-a-file-upload-question-.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIaddanextendedmatchingitemsquestion" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIaddanextendedmatchingitemsquestion</value>
-    </property>
-    <property name="name">
-      <value>How do I add an extended matching items question?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_testsQuizzesInstructorGuide/How-do-I-add-an-extended-matching-items-question-.html</value>
-    </property>
-  </bean>
-  <bean id="howtoIaddmultiplepartstoanassessment" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howtoIaddmultiplepartstoanassessment</value>
-    </property>
-    <property name="name">
-      <value>How to I add multiple parts to an assessment?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_testsQuizzesInstructorGuide/How-to-I-add-multiple-parts-to-an-assessment-.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIuseassessmentparts" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIuseassessmentparts</value>
-    </property>
-    <property name="name">
-      <value>How do I use assessment parts?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_testsQuizzesInstructorGuide/How-do-I-use-assessment-parts-.html</value>
-    </property>
-  </bean>
-  <bean id="whatisaquestionpool" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>whatisaquestionpool</value>
-    </property>
-    <property name="name">
-      <value>What is a question pool?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_testsQuizzesInstructorGuide/What-is-a-question-pool-.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIaddcopymoveorremoveaquestionpool" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIaddcopymoveorremoveaquestionpool</value>
-    </property>
-    <property name="name">
-      <value>How do I add, copy, move, or remove a question pool?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_testsQuizzesInstructorGuide/How-do-I-add--copy--move--or-remove-a-question-pool-.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIaddaquestiontoaquestionpool" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIaddaquestiontoaquestionpool</value>
-    </property>
-    <property name="name">
-      <value>How do I add a question to a question pool?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_testsQuizzesInstructorGuide/How-do-I-add-a-question-to-a-question-pool-.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIcopyquestionsfromthequestionpool" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIcopyquestionsfromthequestionpool</value>
-    </property>
-    <property name="name">
-      <value>How do I copy questions from the question pool?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_testsQuizzesInstructorGuide/How-do-I-copy-questions-from-the-question-pool-.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIsetuparandomquestionset" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIsetuparandomquestionset</value>
-    </property>
-    <property name="name">
-      <value>How do I set up a random question set?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_testsQuizzesInstructorGuide/How-do-I-set-up-a-random-question-set-.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIimportandexportassessments" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIimportandexportassessments</value>
-    </property>
-    <property name="name">
-      <value>How do I import and export assessments?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_testsQuizzesInstructorGuide/How-do-I-import-and-export-assessments-.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIimportaquestionpool" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIimportaquestionpool</value>
-    </property>
-    <property name="name">
-      <value>How do I import a question pool?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_testsQuizzesInstructorGuide/How-do-I-import-a-question-pool-.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIshareaquestionpool" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIshareaquestionpool</value>
-    </property>
-    <property name="name">
-      <value>How do I share a question pool?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_testsQuizzesInstructorGuide/How-do-I-share-a-question-pool-.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIcreateasurvey" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIcreateasurvey</value>
-    </property>
-    <property name="name">
-      <value>How do I create a survey?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_testsQuizzesInstructorGuide/How-do-I-create-a-survey-.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIinspectandadjustthesettingsofanassessment" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIinspectandadjustthesettingsofanassessment</value>
-    </property>
-    <property name="name">
-      <value>How do I inspect and adjust the settings of an assessment?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_testsQuizzesInstructorGuide/How-do-I-inspect-and-adjust-the-settings-of-an-assessment-.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIpublishanassessmentietestorquiz" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIpublishanassessmentietestorquiz</value>
-    </property>
-    <property name="name">
-      <value>How do I publish an assessment (i.e. test or quiz)? </value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_testsQuizzesInstructorGuide/How-do-I-publish-an-assessment--i.e.-test-or-quiz--.html</value>
-    </property>
-  </bean>
-  <bean id="howdoIgradeTestsQuizzes" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIgradeTestsQuizzes</value>
-    </property>
-    <property name="name">
-      <value>How do I grade Tests &amp; Quizzes? </value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_testsQuizzesInstructorGuide/How-do-I-grade-Tests---Quizzes-.html</value>
-    </property>
-  </bean>
-  <bean id="whatistheTestsQuizzesEventLog" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>whatistheTestsQuizzesEventLog</value>
-    </property>
-    <property name="name">
-      <value>What is the Tests &amp; Quizzes Event Log?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_testsQuizzesInstructorGuide/What-is-the-Tests---Quizzes-Event-Log-.html</value>
     </property>
   </bean>
   <bean id="webContentInstructorGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
@@ -4063,7 +3567,6 @@
         <ref bean="newsStudentGuide"/>
         <ref bean="podcastsStudentGuide"/>
         <ref bean="pollsStudentGuide"/>
-        <ref bean="postEmStudentGuide"/>
         <ref bean="profileStudentGuide"/>
         <ref bean="resourcesStudentGuide"/>
         <ref bean="richTextEditorStudentGuide"/>
@@ -4072,7 +3575,6 @@
         <ref bean="searchStudentGuide"/>
         <ref bean="signUpStudentGuide"/>
         <ref bean="syllabusStudentGuide"/>
-        <ref bean="testsQuizzesStudentGuide"/>
         <ref bean="wikiStudentGuide"/>
       </list>
     </property>
@@ -4293,7 +3795,7 @@
   </bean>
   <bean id="gradebookStudentGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
     <property name="name">
-      <value>Gradebook</value>
+      <value>Markbook</value>
     </property>
     <property name="resources">
       <list>
@@ -4307,7 +3809,7 @@
       <value>howdoIviewmyGradebookgrades</value>
     </property>
     <property name="name">
-      <value>How do I view my Gradebook grades?</value>
+      <value>How do I view my Markbook grades?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_gradebookStudentGuide/How-do-I-view-my-Gradebook-grades-.html</value>
@@ -4391,31 +3893,6 @@
       </list>
     </property>
   </bean>
-  <bean id="postEmStudentGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
-    <property name="name">
-      <value>PostEm</value>
-    </property>
-    <property name="resources">
-      <list>
-        <ref bean="whatisthePostEmtool"/>
-        <ref bean="howdoIviewmyfeedbackinPostEm"/>
-      </list>
-    </property>
-  </bean>
-  <bean id="howdoIviewmyfeedbackinPostEm" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIviewmyfeedbackinPostEm</value>
-    </property>
-    <property name="name">
-      <value>How do I view my feedback in PostEm?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_postEmStudentGuide/How-do-I-view-my-feedback-in-PostEm-.html</value>
-    </property>
-    <property name="defaultForTool">
-      <value>sakai.postem</value>
-    </property>
-  </bean>
   <bean id="profileStudentGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
     <property name="name">
       <value>Profile</value>
@@ -4459,7 +3936,7 @@
   </bean>
   <bean id="richTextEditorStudentGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
     <property name="name">
-      <value>Rich Text Editor</value>
+      <value>WYSIWYG Editor</value>
     </property>
     <property name="resources">
       <list>
@@ -4481,7 +3958,7 @@
   </bean>
   <bean id="rosterStudentGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
     <property name="name">
-      <value>Roster</value>
+      <value>Site Members</value>
     </property>
     <property name="resources">
       <list>
@@ -4538,43 +4015,6 @@
       </list>
     </property>
   </bean>
-  <bean id="testsQuizzesStudentGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
-    <property name="name">
-      <value>Tests &amp; Quizzes</value>
-    </property>
-    <property name="resources">
-      <list>
-        <ref bean="whatistheTestsQuizzestool"/>
-        <ref bean="howdoIsubmitanassessmentietestorquiz"/>
-        <ref bean="howdoIviewthefeedbackonmyassessmentietestorquiz"/>
-      </list>
-    </property>
-  </bean>
-  <bean id="howdoIsubmitanassessmentietestorquiz" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIsubmitanassessmentietestorquiz</value>
-    </property>
-    <property name="name">
-      <value>How do I submit an assessment (i.e. test or quiz)?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_testsQuizzesStudentGuide/How-do-I-submit-an-assessment--i.e.-test-or-quiz--.html</value>
-    </property>
-    <property name="defaultForTool">
-      <value>sakai.samigo</value>
-    </property>
-  </bean>
-  <bean id="howdoIviewthefeedbackonmyassessmentietestorquiz" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>howdoIviewthefeedbackonmyassessmentietestorquiz</value>
-    </property>
-    <property name="name">
-      <value>How do I view the feedback on my assessment (i.e. test or quiz)?</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_testsQuizzesStudentGuide/How-do-I-view-the-feedback-on-my-assessment--i.e.-test-or-quiz--.html</value>
-    </property>
-  </bean>
   <bean id="wikiStudentGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
     <property name="name">
       <value>Wiki</value>
@@ -4589,1199 +4029,6 @@
         <ref bean="howdoIviewwikipageinfo"/>
         <ref bean="howdoIviewwikipagehistory"/>
       </list>
-    </property>
-  </bean>
-  <bean id="oSPGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
-    <property name="name">
-      <value>OSP Guide</value>
-    </property>
-    <property name="categories">
-      <list>
-        <ref bean="evaluationsOSPOSPGuide"/>
-        <ref bean="formsOSPOSPGuide"/>
-        <ref bean="glossaryOSPOSPGuide"/>
-        <ref bean="matricesOSPOSPGuide"/>
-        <ref bean="portfolioTemplatesOSPOSPGuide"/>
-        <ref bean="portfoliosOSPOSPGuide"/>
-        <ref bean="stylesOSPOSPGuide"/>
-        <ref bean="settingSakaiPropertiesforOSPOSPGuide"/>
-      </list>
-    </property>
-  </bean>
-  <bean id="evaluationsOSPOSPGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
-    <property name="name">
-      <value>Evaluations (OSP)</value>
-    </property>
-    <property name="resources">
-      <list>
-        <ref bean="evaluationsOverview"/>
-        <ref bean="evaluatingSubmittedWork"/>
-        <ref bean="editingRemovingEvaluations"/>
-        <ref bean="aggregatingEvaluationsacrossSites"/>
-        <ref bean="changingEvaluationsToolPermissionsForCIGCoordinators"/>
-      </list>
-    </property>
-  </bean>
-  <bean id="evaluationsOverview" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>evaluationsOverview</value>
-    </property>
-    <property name="name">
-      <value>Evaluations Overview</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_evaluationsOSPOSPGuide/Evaluations-Overview.html</value>
-    </property>
-    <property name="defaultForTool">
-      <value>osp.evaluation</value>
-    </property>
-  </bean>
-  <bean id="evaluatingSubmittedWork" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>evaluatingSubmittedWork</value>
-    </property>
-    <property name="name">
-      <value>Evaluating Submitted Work</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_evaluationsOSPOSPGuide/Evaluating-Submitted-Work.html</value>
-    </property>
-  </bean>
-  <bean id="editingRemovingEvaluations" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>editingRemovingEvaluations</value>
-    </property>
-    <property name="name">
-      <value>Editing / Removing Evaluations</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_evaluationsOSPOSPGuide/Editing---Removing-Evaluations.html</value>
-    </property>
-  </bean>
-  <bean id="aggregatingEvaluationsacrossSites" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>aggregatingEvaluationsacrossSites</value>
-    </property>
-    <property name="name">
-      <value>Aggregating Evaluations across Sites</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_evaluationsOSPOSPGuide/Aggregating-Evaluations-across-Sites.html</value>
-    </property>
-  </bean>
-  <bean id="changingEvaluationsToolPermissionsForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>changingEvaluationsToolPermissionsForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Changing Evaluations Tool Permissions (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_evaluationsOSPOSPGuide/Changing-Evaluations-Tool-Permissions--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="formsOSPOSPGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
-    <property name="name">
-      <value>Forms (OSP)</value>
-    </property>
-    <property name="resources">
-      <list>
-        <ref bean="formsOverview"/>
-        <ref bean="completingFormsinResources"/>
-        <ref bean="editingCompletedFormsinResources"/>
-        <ref bean="deletingCompletedFormsinResources"/>
-        <ref bean="completedFormsandDataTypesForCIGCoordinators"/>
-        <ref bean="formsandResourcesForCIGCoordinators"/>
-        <ref bean="accessingaListofFormsForCIGCoordinators"/>
-        <ref bean="preliminaryStepsforAddingFormsForCIGCoordinators"/>
-        <ref bean="addingFormsForCIGCoordinators"/>
-        <ref bean="previewingFormsForCIGCoordinators"/>
-        <ref bean="editingFormsForCIGCoordinators"/>
-        <ref bean="publishingFormsForCIGCoordinators"/>
-        <ref bean="publishingFormsGloballyForCIGCoordinators"/>
-        <ref bean="exportingandImportingFormsForCIGCoordinators"/>
-        <ref bean="deletingFormsForCIGCoordinators"/>
-        <ref bean="changingFormsToolPermissionsForCIGCoordinators"/>
-      </list>
-    </property>
-  </bean>
-  <bean id="formsOverview" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>formsOverview</value>
-    </property>
-    <property name="name">
-      <value>Forms Overview</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_formsOSPOSPGuide/Forms-Overview.html</value>
-    </property>
-    <property name="defaultForTool">
-      <value>sakai.metaobj</value>
-    </property>
-  </bean>
-  <bean id="completingFormsinResources" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>completingFormsinResources</value>
-    </property>
-    <property name="name">
-      <value>Completing Forms in Resources</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_formsOSPOSPGuide/Completing-Forms-in-Resources.html</value>
-    </property>
-  </bean>
-  <bean id="editingCompletedFormsinResources" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>editingCompletedFormsinResources</value>
-    </property>
-    <property name="name">
-      <value>Editing Completed Forms in Resources</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_formsOSPOSPGuide/Editing-Completed-Forms-in-Resources.html</value>
-    </property>
-  </bean>
-  <bean id="deletingCompletedFormsinResources" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>deletingCompletedFormsinResources</value>
-    </property>
-    <property name="name">
-      <value>Deleting Completed Forms in Resources</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_formsOSPOSPGuide/Deleting-Completed-Forms-in-Resources.html</value>
-    </property>
-  </bean>
-  <bean id="completedFormsandDataTypesForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>completedFormsandDataTypesForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Completed Forms and Data Types (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_formsOSPOSPGuide/Completed-Forms-and-Data-Types--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="formsandResourcesForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>formsandResourcesForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Forms and Resources (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_formsOSPOSPGuide/Forms-and-Resources--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="accessingaListofFormsForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>accessingaListofFormsForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Accessing a List of Forms (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_formsOSPOSPGuide/Accessing-a-List-of-Forms--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="preliminaryStepsforAddingFormsForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>preliminaryStepsforAddingFormsForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Preliminary Steps for Adding Forms (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_formsOSPOSPGuide/Preliminary-Steps-for-Adding-Forms--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="addingFormsForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>addingFormsForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Adding Forms (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_formsOSPOSPGuide/Adding-Forms--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="previewingFormsForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>previewingFormsForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Previewing Forms (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_formsOSPOSPGuide/Previewing-Forms--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="editingFormsForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>editingFormsForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Editing Forms (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_formsOSPOSPGuide/Editing-Forms--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="publishingFormsForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>publishingFormsForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Publishing Forms (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_formsOSPOSPGuide/Publishing-Forms--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="publishingFormsGloballyForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>publishingFormsGloballyForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Publishing Forms Globally (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_formsOSPOSPGuide/Publishing-Forms-Globally--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="exportingandImportingFormsForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>exportingandImportingFormsForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Exporting and Importing Forms (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_formsOSPOSPGuide/Exporting-and-Importing-Forms--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="deletingFormsForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>deletingFormsForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Deleting Forms (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_formsOSPOSPGuide/Deleting-Forms--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="changingFormsToolPermissionsForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>changingFormsToolPermissionsForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Changing Forms Tool Permissions (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_formsOSPOSPGuide/Changing-Forms-Tool-Permissions--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="glossaryOSPOSPGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
-    <property name="name">
-      <value>Glossary (OSP)</value>
-    </property>
-    <property name="resources">
-      <list>
-        <ref bean="glossaryOverview"/>
-        <ref bean="addingGlossaryTermsForCIGCoordinators"/>
-        <ref bean="editingGlossaryTermsForCIGCoordinators"/>
-        <ref bean="deletingGlossaryTermsForCIGCoordinators"/>
-        <ref bean="publishingGlossaryTermsGloballyForCIGCoordinators"/>
-        <ref bean="exportingandImportingGlossaryTermsForCIGCoordinators"/>
-        <ref bean="changingGlossaryToolPermissionsForCIGCoordinators"/>
-      </list>
-    </property>
-  </bean>
-  <bean id="glossaryOverview" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>glossaryOverview</value>
-    </property>
-    <property name="name">
-      <value>Glossary Overview</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_glossaryOSPOSPGuide/Glossary-Overview.html</value>
-    </property>
-    <property name="defaultForTool">
-      <value>osp.glossary</value>
-    </property>
-  </bean>
-  <bean id="addingGlossaryTermsForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>addingGlossaryTermsForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Adding Glossary Terms (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_glossaryOSPOSPGuide/Adding-Glossary-Terms--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="editingGlossaryTermsForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>editingGlossaryTermsForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Editing Glossary Terms (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_glossaryOSPOSPGuide/Editing-Glossary-Terms--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="deletingGlossaryTermsForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>deletingGlossaryTermsForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Deleting Glossary Terms (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_glossaryOSPOSPGuide/Deleting-Glossary-Terms--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="publishingGlossaryTermsGloballyForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>publishingGlossaryTermsGloballyForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Publishing Glossary Terms Globally (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_glossaryOSPOSPGuide/Publishing-Glossary-Terms-Globally--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="exportingandImportingGlossaryTermsForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>exportingandImportingGlossaryTermsForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Exporting and Importing Glossary Terms (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_glossaryOSPOSPGuide/Exporting-and-Importing-Glossary-Terms--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="changingGlossaryToolPermissionsForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>changingGlossaryToolPermissionsForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Changing Glossary Tool Permissions (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_glossaryOSPOSPGuide/Changing-Glossary-Tool-Permissions--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="matricesOSPOSPGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
-    <property name="name">
-      <value>Matrices (OSP)</value>
-    </property>
-    <property name="resources">
-      <list>
-        <ref bean="matricesOverview"/>
-        <ref bean="userRolesandAssociatedActionsinMatrices"/>
-        <ref bean="matrixCellStatus"/>
-        <ref bean="assigningPermissionstoSpecificMatricesForCIGCoordinators"/>
-        <ref bean="designingMatricesForCIGCoordinators"/>
-        <ref bean="associatingMatriceswithSitesForCIGCoordinators"/>
-        <ref bean="removingSiteAssociationsForCIGCoordinators"/>
-        <ref bean="linkingMatrixCellsForCIGCoordinators"/>
-        <ref bean="linkingAssignmentswithMatrixCellsForCIGCoordinators"/>
-        <ref bean="creatingMatricesStep1CreatingaFrameworkForCIGCoordinators"/>
-        <ref bean="creatingMatricesStep2SettingUpCellsForCIGCoordinators"/>
-        <ref bean="creatingMatricesStep3PreviewingandPublishingMatricesForCIGCoordinators"/>
-        <ref bean="exportingandImportingMatricesForCIGCoordinators"/>
-        <ref bean="editingMatricesForCIGCoordinators"/>
-        <ref bean="deletingMatricesForCIGCoordinators"/>
-        <ref bean="changingMatricesToolPermissionsForCIGCoordinators"/>
-        <ref bean="changingtheStatusofMatrixCellsForCIGCoordinators"/>
-        <ref bean="accessingandCompletingMatrices"/>
-        <ref bean="addingCompletedFormstoMatrixCells"/>
-        <ref bean="attachingEvidenceofWorktoMatrixCells"/>
-        <ref bean="reflectingonWorkinMatrixCells"/>
-        <ref bean="revisingWorkinMatrixCells"/>
-        <ref bean="deletingWorkinMatrixCells"/>
-        <ref bean="submittingWorkinMatrixCellsforEvaluation"/>
-        <ref bean="viewingFeedbackonWorkinMatrixCells"/>
-        <ref bean="providingFormativeFeedbackinMatrixCells"/>
-        <ref bean="addingEvaluationstoMatrixCells"/>
-        <ref bean="accessingMatricesfromMyWorkspace"/>
-      </list>
-    </property>
-  </bean>
-  <bean id="matricesOverview" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>matricesOverview</value>
-    </property>
-    <property name="name">
-      <value>Matrices Overview</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_matricesOSPOSPGuide/Matrices-Overview.html</value>
-    </property>
-    <property name="defaultForTool">
-      <value>osp.matrix</value>
-    </property>
-  </bean>
-  <bean id="userRolesandAssociatedActionsinMatrices" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>userRolesandAssociatedActionsinMatrices</value>
-    </property>
-    <property name="name">
-      <value>User Roles and Associated Actions in Matrices</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_matricesOSPOSPGuide/User-Roles-and-Associated-Actions-in-Matrices.html</value>
-    </property>
-  </bean>
-  <bean id="matrixCellStatus" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>matrixCellStatus</value>
-    </property>
-    <property name="name">
-      <value>Matrix Cell Status</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_matricesOSPOSPGuide/Matrix-Cell-Status.html</value>
-    </property>
-  </bean>
-  <bean id="assigningPermissionstoSpecificMatricesForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>assigningPermissionstoSpecificMatricesForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Assigning Permissions to Specific Matrices (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_matricesOSPOSPGuide/Assigning-Permissions-to-Specific-Matrices--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="designingMatricesForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>designingMatricesForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Designing Matrices (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_matricesOSPOSPGuide/Designing-Matrices--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="associatingMatriceswithSitesForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>associatingMatriceswithSitesForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Associating Matrices with Sites (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_matricesOSPOSPGuide/Associating-Matrices-with-Sites--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="removingSiteAssociationsForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>removingSiteAssociationsForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Removing Site Associations (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_matricesOSPOSPGuide/Removing-Site-Associations--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="linkingMatrixCellsForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>linkingMatrixCellsForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Linking Matrix Cells (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_matricesOSPOSPGuide/Linking-Matrix-Cells--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="linkingAssignmentswithMatrixCellsForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>linkingAssignmentswithMatrixCellsForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Linking Assignments with Matrix Cells (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_matricesOSPOSPGuide/Linking-Assignments-with-Matrix-Cells--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="creatingMatricesStep1CreatingaFrameworkForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>creatingMatricesStep1CreatingaFrameworkForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Creating Matrices: Step 1: Creating a Framework (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_matricesOSPOSPGuide/Creating-Matrices--Step-1--Creating-a-Framework--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="creatingMatricesStep2SettingUpCellsForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>creatingMatricesStep2SettingUpCellsForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Creating Matrices: Step 2: Setting Up Cells (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_matricesOSPOSPGuide/Creating-Matrices--Step-2--Setting-Up-Cells--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="creatingMatricesStep3PreviewingandPublishingMatricesForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>creatingMatricesStep3PreviewingandPublishingMatricesForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Creating Matrices: Step 3: Previewing and Publishing Matrices (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_matricesOSPOSPGuide/Creating-Matrices--Step-3--Previewing-and-Publishing-Matrices--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="exportingandImportingMatricesForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>exportingandImportingMatricesForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Exporting and Importing Matrices (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_matricesOSPOSPGuide/Exporting-and-Importing-Matrices--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="editingMatricesForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>editingMatricesForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Editing Matrices (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_matricesOSPOSPGuide/Editing-Matrices--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="deletingMatricesForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>deletingMatricesForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Deleting Matrices (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_matricesOSPOSPGuide/Deleting-Matrices--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="changingMatricesToolPermissionsForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>changingMatricesToolPermissionsForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Changing Matrices Tool Permissions (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_matricesOSPOSPGuide/Changing-Matrices-Tool-Permissions--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="changingtheStatusofMatrixCellsForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>changingtheStatusofMatrixCellsForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Changing the Status of Matrix Cells (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_matricesOSPOSPGuide/Changing-the-Status-of-Matrix-Cells--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="accessingandCompletingMatrices" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>accessingandCompletingMatrices</value>
-    </property>
-    <property name="name">
-      <value>Accessing and Completing Matrices</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_matricesOSPOSPGuide/Accessing-and-Completing-Matrices.html</value>
-    </property>
-  </bean>
-  <bean id="addingCompletedFormstoMatrixCells" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>addingCompletedFormstoMatrixCells</value>
-    </property>
-    <property name="name">
-      <value>Adding Completed Forms to Matrix Cells</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_matricesOSPOSPGuide/Adding-Completed-Forms-to-Matrix-Cells.html</value>
-    </property>
-  </bean>
-  <bean id="attachingEvidenceofWorktoMatrixCells" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>attachingEvidenceofWorktoMatrixCells</value>
-    </property>
-    <property name="name">
-      <value>Attaching Evidence of Work to Matrix Cells</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_matricesOSPOSPGuide/Attaching-Evidence-of-Work-to-Matrix-Cells.html</value>
-    </property>
-  </bean>
-  <bean id="reflectingonWorkinMatrixCells" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>reflectingonWorkinMatrixCells</value>
-    </property>
-    <property name="name">
-      <value>Reflecting on Work in Matrix Cells</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_matricesOSPOSPGuide/Reflecting-on-Work-in-Matrix-Cells.html</value>
-    </property>
-  </bean>
-  <bean id="revisingWorkinMatrixCells" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>revisingWorkinMatrixCells</value>
-    </property>
-    <property name="name">
-      <value>Revising Work in Matrix Cells</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_matricesOSPOSPGuide/Revising-Work-in-Matrix-Cells.html</value>
-    </property>
-  </bean>
-  <bean id="deletingWorkinMatrixCells" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>deletingWorkinMatrixCells</value>
-    </property>
-    <property name="name">
-      <value>Deleting Work in Matrix Cells</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_matricesOSPOSPGuide/Deleting-Work-in-Matrix-Cells.html</value>
-    </property>
-  </bean>
-  <bean id="submittingWorkinMatrixCellsforEvaluation" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>submittingWorkinMatrixCellsforEvaluation</value>
-    </property>
-    <property name="name">
-      <value>Submitting Work in Matrix Cells for Evaluation</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_matricesOSPOSPGuide/Submitting-Work-in-Matrix-Cells-for-Evaluation.html</value>
-    </property>
-  </bean>
-  <bean id="viewingFeedbackonWorkinMatrixCells" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>viewingFeedbackonWorkinMatrixCells</value>
-    </property>
-    <property name="name">
-      <value>Viewing Feedback on Work in Matrix Cells</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_matricesOSPOSPGuide/Viewing-Feedback-on-Work-in-Matrix-Cells.html</value>
-    </property>
-  </bean>
-  <bean id="providingFormativeFeedbackinMatrixCells" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>providingFormativeFeedbackinMatrixCells</value>
-    </property>
-    <property name="name">
-      <value>Providing Formative Feedback in Matrix Cells</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_matricesOSPOSPGuide/Providing-Formative-Feedback-in-Matrix-Cells.html</value>
-    </property>
-  </bean>
-  <bean id="addingEvaluationstoMatrixCells" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>addingEvaluationstoMatrixCells</value>
-    </property>
-    <property name="name">
-      <value>Adding Evaluations to Matrix Cells</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_matricesOSPOSPGuide/Adding-Evaluations-to-Matrix-Cells.html</value>
-    </property>
-  </bean>
-  <bean id="accessingMatricesfromMyWorkspace" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>accessingMatricesfromMyWorkspace</value>
-    </property>
-    <property name="name">
-      <value>Accessing Matrices from My Workspace</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_matricesOSPOSPGuide/Accessing-Matrices-from-My-Workspace.html</value>
-    </property>
-  </bean>
-  <bean id="portfolioTemplatesOSPOSPGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
-    <property name="name">
-      <value>Portfolio Templates (OSP)</value>
-    </property>
-    <property name="resources">
-      <list>
-        <ref bean="portfolioTemplatesOverviewForCIGCoordinators"/>
-        <ref bean="usingResourceswithPortfolioTemplatesForCIGCoordinators"/>
-        <ref bean="preparingtoCreatePortfolioTemplatesForCIGCoordinators"/>
-        <ref bean="creatingPortfolioTemplatesStep1ProvideaNameandDescriptionForCIGCoordinators"/>
-        <ref bean="creatingPortfolioTemplatesStep2SpecifytheLayoutandRequiredSettingsForCIGCoordinators"/>
-        <ref bean="creatingPortfolioTemplatesStep3ListUserContentForCIGCoordinators"/>
-        <ref bean="creatingPortfolioTemplatesStep4SelectSupportingFilesForCIGCoordinators"/>
-        <ref bean="creatingPortfolioTemplatesStep5FinishingUpwithPassthroughXSLForCIGCoordinators"/>
-        <ref bean="publishingPortfolioTemplatesForCIGCoordinators"/>
-        <ref bean="editingPortfolioTemplatesForCIGCoordinators"/>
-        <ref bean="copyingPortfolioTemplatesForCIGCoordinators"/>
-        <ref bean="exportingandImportingPortfolioTemplatesForCIGCoordinators"/>
-        <ref bean="deletingPortfolioTemplatesForCIGCoordinators"/>
-        <ref bean="changingPortfolioTemplatesToolPermissionsForCIGCoordinators"/>
-      </list>
-    </property>
-  </bean>
-  <bean id="portfolioTemplatesOverviewForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>portfolioTemplatesOverviewForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Portfolio Templates Overview (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_portfolioTemplatesOSPOSPGuide/Portfolio-Templates-Overview--For-CIG-Coordinators-.html</value>
-    </property>
-    <property name="defaultForTool">
-      <value>osp.presTemplate</value>
-    </property>
-  </bean>
-  <bean id="usingResourceswithPortfolioTemplatesForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>usingResourceswithPortfolioTemplatesForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Using Resources with Portfolio Templates (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_portfolioTemplatesOSPOSPGuide/Using-Resources-with-Portfolio-Templates--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="preparingtoCreatePortfolioTemplatesForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>preparingtoCreatePortfolioTemplatesForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Preparing to Create Portfolio Templates (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_portfolioTemplatesOSPOSPGuide/Preparing-to-Create-Portfolio-Templates--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="creatingPortfolioTemplatesStep1ProvideaNameandDescriptionForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>creatingPortfolioTemplatesStep1ProvideaNameandDescriptionForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Creating Portfolio Templates: Step 1: Provide a Name and Description (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_portfolioTemplatesOSPOSPGuide/Creating-Portfolio-Templates--Step-1--Provide-a-Name-and-Description--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="creatingPortfolioTemplatesStep2SpecifytheLayoutandRequiredSettingsForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>creatingPortfolioTemplatesStep2SpecifytheLayoutandRequiredSettingsForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Creating Portfolio Templates: Step 2: Specify the Layout and Required Settings (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_portfolioTemplatesOSPOSPGuide/Creating-Portfolio-Templates--Step-2--Specify-the-Layout-and-Required-Settings--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="creatingPortfolioTemplatesStep3ListUserContentForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>creatingPortfolioTemplatesStep3ListUserContentForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Creating Portfolio Templates: Step 3: List User Content (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_portfolioTemplatesOSPOSPGuide/Creating-Portfolio-Templates--Step-3--List-User-Content--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="creatingPortfolioTemplatesStep4SelectSupportingFilesForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>creatingPortfolioTemplatesStep4SelectSupportingFilesForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Creating Portfolio Templates: Step 4: Select Supporting Files (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_portfolioTemplatesOSPOSPGuide/Creating-Portfolio-Templates--Step-4--Select-Supporting-Files--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="creatingPortfolioTemplatesStep5FinishingUpwithPassthroughXSLForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>creatingPortfolioTemplatesStep5FinishingUpwithPassthroughXSLForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Creating Portfolio Templates: Step 5: Finishing Up with Passthrough XSL (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_portfolioTemplatesOSPOSPGuide/Creating-Portfolio-Templates--Step-5--Finishing-Up-with-Passthrough-XSL--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="publishingPortfolioTemplatesForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>publishingPortfolioTemplatesForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Publishing Portfolio Templates (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_portfolioTemplatesOSPOSPGuide/Publishing-Portfolio-Templates--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="editingPortfolioTemplatesForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>editingPortfolioTemplatesForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Editing Portfolio Templates (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_portfolioTemplatesOSPOSPGuide/Editing-Portfolio-Templates--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="copyingPortfolioTemplatesForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>copyingPortfolioTemplatesForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Copying Portfolio Templates (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_portfolioTemplatesOSPOSPGuide/Copying-Portfolio-Templates--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="exportingandImportingPortfolioTemplatesForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>exportingandImportingPortfolioTemplatesForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Exporting and Importing Portfolio Templates (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_portfolioTemplatesOSPOSPGuide/Exporting-and-Importing-Portfolio-Templates--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="deletingPortfolioTemplatesForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>deletingPortfolioTemplatesForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Deleting Portfolio Templates (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_portfolioTemplatesOSPOSPGuide/Deleting-Portfolio-Templates--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="changingPortfolioTemplatesToolPermissionsForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>changingPortfolioTemplatesToolPermissionsForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Changing Portfolio Templates Tool Permissions (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_portfolioTemplatesOSPOSPGuide/Changing-Portfolio-Templates-Tool-Permissions--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="portfoliosOSPOSPGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
-    <property name="name">
-      <value>Portfolios (OSP)</value>
-    </property>
-    <property name="resources">
-      <list>
-        <ref bean="portfoliosOverview"/>
-        <ref bean="portfoliosHomePage"/>
-        <ref bean="creatingPortfolios"/>
-        <ref bean="requiredSettingsinPortfolios"/>
-        <ref bean="sharingPortfolios"/>
-        <ref bean="editingPortfolios"/>
-        <ref bean="statisticsonPortfolioViewings"/>
-        <ref bean="downloadingPortfolios"/>
-        <ref bean="deletingPortfolios"/>
-        <ref bean="hidingorShowingPortfolios"/>
-        <ref bean="viewingPortfolios"/>
-        <ref bean="commentingonPortfolios"/>
-        <ref bean="changingPortfoliosToolPermissionsForCIGCoordinators"/>
-      </list>
-    </property>
-  </bean>
-  <bean id="portfoliosOverview" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>portfoliosOverview</value>
-    </property>
-    <property name="name">
-      <value>Portfolios Overview</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_portfoliosOSPOSPGuide/Portfolios-Overview.html</value>
-    </property>
-    <property name="defaultForTool">
-      <value>osp.presentation</value>
-    </property>
-  </bean>
-  <bean id="portfoliosHomePage" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>portfoliosHomePage</value>
-    </property>
-    <property name="name">
-      <value>Portfolios Home Page</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_portfoliosOSPOSPGuide/Portfolios-Home-Page.html</value>
-    </property>
-  </bean>
-  <bean id="creatingPortfolios" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>creatingPortfolios</value>
-    </property>
-    <property name="name">
-      <value>Creating Portfolios</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_portfoliosOSPOSPGuide/Creating-Portfolios.html</value>
-    </property>
-  </bean>
-  <bean id="requiredSettingsinPortfolios" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>requiredSettingsinPortfolios</value>
-    </property>
-    <property name="name">
-      <value>Required Settings in Portfolios</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_portfoliosOSPOSPGuide/Required-Settings-in-Portfolios.html</value>
-    </property>
-  </bean>
-  <bean id="sharingPortfolios" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>sharingPortfolios</value>
-    </property>
-    <property name="name">
-      <value>Sharing Portfolios</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_portfoliosOSPOSPGuide/Sharing-Portfolios.html</value>
-    </property>
-  </bean>
-  <bean id="editingPortfolios" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>editingPortfolios</value>
-    </property>
-    <property name="name">
-      <value>Editing Portfolios</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_portfoliosOSPOSPGuide/Editing-Portfolios.html</value>
-    </property>
-  </bean>
-  <bean id="statisticsonPortfolioViewings" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>statisticsonPortfolioViewings</value>
-    </property>
-    <property name="name">
-      <value>Statistics on Portfolio Viewings</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_portfoliosOSPOSPGuide/Statistics-on-Portfolio-Viewings.html</value>
-    </property>
-  </bean>
-  <bean id="downloadingPortfolios" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>downloadingPortfolios</value>
-    </property>
-    <property name="name">
-      <value>Downloading Portfolios</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_portfoliosOSPOSPGuide/Downloading-Portfolios.html</value>
-    </property>
-  </bean>
-  <bean id="deletingPortfolios" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>deletingPortfolios</value>
-    </property>
-    <property name="name">
-      <value>Deleting Portfolios</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_portfoliosOSPOSPGuide/Deleting-Portfolios.html</value>
-    </property>
-  </bean>
-  <bean id="hidingorShowingPortfolios" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>hidingorShowingPortfolios</value>
-    </property>
-    <property name="name">
-      <value>Hiding or Showing Portfolios</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_portfoliosOSPOSPGuide/Hiding-or-Showing-Portfolios.html</value>
-    </property>
-  </bean>
-  <bean id="viewingPortfolios" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>viewingPortfolios</value>
-    </property>
-    <property name="name">
-      <value>Viewing Portfolios</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_portfoliosOSPOSPGuide/Viewing-Portfolios.html</value>
-    </property>
-  </bean>
-  <bean id="commentingonPortfolios" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>commentingonPortfolios</value>
-    </property>
-    <property name="name">
-      <value>Commenting on Portfolios</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_portfoliosOSPOSPGuide/Commenting-on-Portfolios.html</value>
-    </property>
-  </bean>
-  <bean id="changingPortfoliosToolPermissionsForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>changingPortfoliosToolPermissionsForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Changing Portfolios Tool Permissions (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_portfoliosOSPOSPGuide/Changing-Portfolios-Tool-Permissions--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="stylesOSPOSPGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
-    <property name="name">
-      <value>Styles (OSP)</value>
-    </property>
-    <property name="resources">
-      <list>
-        <ref bean="stylesOverviewForCIGCoordinators"/>
-        <ref bean="addingStylesForCIGCoordinators"/>
-        <ref bean="editingStylesForCIGCoordinators"/>
-        <ref bean="deletingStylesForCIGCoordinators"/>
-        <ref bean="publishingStylesGloballyForCIGCoordinators"/>
-        <ref bean="changingStylesToolPermissionsForCIGCoordinators"/>
-      </list>
-    </property>
-  </bean>
-  <bean id="stylesOverviewForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>stylesOverviewForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Styles Overview (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_stylesOSPOSPGuide/Styles-Overview--For-CIG-Coordinators-.html</value>
-    </property>
-    <property name="defaultForTool">
-      <value>osp.style</value>
-    </property>
-  </bean>
-  <bean id="addingStylesForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>addingStylesForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Adding Styles (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_stylesOSPOSPGuide/Adding-Styles--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="editingStylesForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>editingStylesForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Editing Styles (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_stylesOSPOSPGuide/Editing-Styles--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="deletingStylesForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>deletingStylesForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Deleting Styles (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_stylesOSPOSPGuide/Deleting-Styles--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="publishingStylesGloballyForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>publishingStylesGloballyForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Publishing Styles Globally (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_stylesOSPOSPGuide/Publishing-Styles-Globally--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="changingStylesToolPermissionsForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>changingStylesToolPermissionsForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Changing Styles Tool Permissions (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_stylesOSPOSPGuide/Changing-Styles-Tool-Permissions--For-CIG-Coordinators-.html</value>
-    </property>
-  </bean>
-  <bean id="settingSakaiPropertiesforOSPOSPGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
-    <property name="name">
-      <value>Setting Sakai Properties for OSP</value>
-    </property>
-    <property name="resources">
-      <list>
-        <ref bean="settingSakaiPropertiesforOSPForCIGCoordinators"/>
-      </list>
-    </property>
-  </bean>
-  <bean id="settingSakaiPropertiesforOSPForCIGCoordinators" class="org.sakaiproject.component.app.help.model.ResourceBean">
-    <property name="docId">
-      <value>settingSakaiPropertiesforOSPForCIGCoordinators</value>
-    </property>
-    <property name="name">
-      <value>Setting Sakai Properties for OSP (For CIG Coordinators)</value>
-    </property>
-    <property name="location">
-      <value>/sakai_screensteps_settingSakaiPropertiesforOSPOSPGuide/Setting-Sakai-Properties-for-OSP--For-CIG-Coordinators-.html</value>
-    </property>
-    <property name="defaultForTool">
-      <value>sakai.settingSakaiPropertiesfor</value>
     </property>
   </bean>
 </beans>
