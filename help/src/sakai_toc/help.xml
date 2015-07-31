@@ -47,6 +47,7 @@
         <ref bean="siteInfoInstructorGuide"/>
         <ref bean="statisticsInstructorGuide"/>
         <ref bean="syllabusInstructorGuide"/>
+        <ref bean="testsInstructorGuide"/>
         <ref bean="webContentInstructorGuide"/>
         <ref bean="wikiInstructorGuide"/>
       </list>
@@ -3328,6 +3329,30 @@
       <value>/sakai_screensteps_syllabusInstructorGuide/How-do-I-create-a-multi-part-syllabus-by-dates-.html</value>
     </property>
   </bean>
+  <bean id="testsInstructorGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
+    <property name="name">
+      <value>Tests</value>
+    </property>
+    <property name="resources">
+      <list>
+        <ref bean="testsInstructorHelp"/>
+      </list>
+    </property>
+  </bean>
+  <bean id="testsInstructorHelp" class="org.sakaiproject.component.app.help.model.ResourceBean">
+    <property name="docId">
+      <value>testsInstructorHelp</value>
+    </property>
+    <property name="name">
+      <value>Tests Help</value>
+    </property>
+    <property name="location">
+      <value>/sakai_screensteps_testsInstructorGuide/testsInstructorGuide.html</value>
+    </property>
+    <property name="defaultForTool">
+      <value>sakai.mneme</value>
+    </property>
+  </bean>
   <bean id="webContentInstructorGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
     <property name="name">
       <value>Web Content</value>
@@ -3575,6 +3600,7 @@
         <ref bean="searchStudentGuide"/>
         <ref bean="signUpStudentGuide"/>
         <ref bean="syllabusStudentGuide"/>
+        <ref bean="testsStudentGuide"/>
         <ref bean="wikiStudentGuide"/>
       </list>
     </property>
@@ -4013,6 +4039,30 @@
         <ref bean="whatistheSyllabustool"/>
         <ref bean="howdoIprintthesyllabus"/>
       </list>
+    </property>
+  </bean>
+  <bean id="testsStudentGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
+    <property name="name">
+      <value>Tests</value>
+    </property>
+    <property name="resources">
+      <list>
+        <ref bean="testsStudentHelp"/>
+      </list>
+    </property>
+  </bean>
+  <bean id="testsStudentHelp" class="org.sakaiproject.component.app.help.model.ResourceBean">
+    <property name="docId">
+      <value>testsStudentHelp</value>
+    </property>
+    <property name="name">
+      <value>Tests Help</value>
+    </property>
+    <property name="location">
+      <value>/sakai_screensteps_testsStudentGuide/testsStudentGuide.html</value>
+    </property>
+    <property name="defaultForTool">
+      <value>sakai.mneme</value>
     </property>
   </bean>
   <bean id="wikiStudentGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
