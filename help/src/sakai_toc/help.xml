@@ -2587,7 +2587,7 @@
   </bean>
   <bean id="scheduleInstructorGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
     <property name="name">
-      <value>Schedule</value>
+      <value>Calendar</value>
     </property>
     <property name="resources">
       <list>
@@ -2610,7 +2610,7 @@
       <value>whatistheScheduleCalendartool</value>
     </property>
     <property name="name">
-      <value>What is the Schedule/Calendar tool?</value>
+      <value>What is the Calendar tool?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_scheduleInstructorGuide/What-is-the-Schedule-Calendar-tool-.html</value>
@@ -2624,7 +2624,7 @@
       <value>howdoIcustomizemyScheduleCalendardisplay</value>
     </property>
     <property name="name">
-      <value>How do I customize my Schedule/Calendar display?</value>
+      <value>How do I customize my Calendar display?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_scheduleInstructorGuide/How-do-I-customize-my-Schedule-Calendar-display-.html</value>
@@ -2646,7 +2646,7 @@
       <value>howdoIchangethecalendarviewintheScheduletool</value>
     </property>
     <property name="name">
-      <value>How do I change the calendar view in the Schedule tool?</value>
+      <value>How do I change the calendar view in the Calendar tool?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_scheduleInstructorGuide/How-do-I-change-the-calendar-view-in-the-Schedule-tool-.html</value>
@@ -2657,7 +2657,7 @@
       <value>howdoIadditemstotheScheduleCalendar</value>
     </property>
     <property name="name">
-      <value>How do I add items to the Schedule/Calendar? </value>
+      <value>How do I add items to the Calendar? </value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_scheduleInstructorGuide/How-do-I-add-items-to-the-Schedule-Calendar-.html</value>
@@ -2690,7 +2690,7 @@
       <value>howdoIprinttheScheduleCalendar</value>
     </property>
     <property name="name">
-      <value>How do I print the Schedule/Calendar?</value>
+      <value>How do I print the Calendar?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_scheduleInstructorGuide/How-do-I-print-the-Schedule-Calendar-.html</value>
@@ -2701,7 +2701,7 @@
       <value>howdoImergetheScheduleCalendarwithanothersite</value>
     </property>
     <property name="name">
-      <value>How do I merge the Schedule/Calendar with another site?</value>
+      <value>How do I merge the Calendar with another site?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_scheduleInstructorGuide/How-do-I-merge-the-Schedule-Calendar-with-another-site-.html</value>
@@ -2712,7 +2712,7 @@
       <value>howdoIimportScheduleCalendarentriesfromafile</value>
     </property>
     <property name="name">
-      <value>How do I import Schedule/Calendar entries from a file?</value>
+      <value>How do I import Calendar entries from a file?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_scheduleInstructorGuide/How-do-I-import-Schedule-Calendar-entries-from-a-file-.html</value>
@@ -2723,7 +2723,7 @@
       <value>howdoImodifyScheduleCalendarpermissions</value>
     </property>
     <property name="name">
-      <value>How do I modify Schedule/Calendar permissions?</value>
+      <value>How do I modify Calendar permissions?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_scheduleInstructorGuide/How-do-I-modify-Schedule-Calendar-permissions-.html</value>
@@ -2904,7 +2904,7 @@
       <value>howdoIaddmeetingstothesiteScheduleorCalendar</value>
     </property>
     <property name="name">
-      <value>How do I add meetings to the site Schedule or Calendar?</value>
+      <value>How do I add meetings to the site Calendar?</value>
     </property>
     <property name="location">
       <value>/sakai_screensteps_signUpInstructorGuide/How-do-I-add-meetings-to-the-site-Schedule-or-Calendar-.html</value>
@@ -3996,7 +3996,7 @@
   </bean>
   <bean id="scheduleStudentGuide" class="org.sakaiproject.component.app.help.model.CategoryBean">
     <property name="name">
-      <value>Schedule</value>
+      <value>Calendar</value>
     </property>
     <property name="resources">
       <list>
